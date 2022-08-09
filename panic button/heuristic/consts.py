@@ -12,4 +12,3 @@ COMMON_ALERTS_WORDS = ['techsupport', 'alert', 'pc', 'security', 'windows', 'add
 					   'tcp', 'theft', 'social', 'rights', 'firewall', 'major', 'disk', 'logins', 'identity', 'removed',
 					   'hard', 'locked', 'cause', 'viruses', 'password', 'type', 'deleted', 'fix', 'page', 'auto',
 					   'based form', 'port', 'com', 'trick', 'software', 'harmful', 'crash', 'terms']
-a = "test"
