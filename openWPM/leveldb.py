@@ -19,5 +19,3 @@ if __name__ == "__main__":
         if key:
             content = db.get(key.encode('utf-8'))
             df.append({'url': url, 'js_content': content}, ignore_index=True)
-
-    mahmud = df
