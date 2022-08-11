@@ -19,7 +19,7 @@ COMMON_ALERTS_WORDS = ['techsupport', 'alert', 'pc', 'security', 'windows', 'add
 					   'tcp', 'theft', 'social', 'rights', 'firewall', 'major', 'disk', 'logins', 'identity', 'removed',
 					   'hard', 'locked', 'cause', 'viruses', 'password', 'deleted', 'fix', 'auto',
 					   'based form', 'trick', 'software', 'harmful', 'crash', 'terms', 'tech support',
-					   'contact', 'toll-free', 'toll free', 'error', 'access', 'problem', 'issue']
+					   'contact', 'toll-free', 'toll free', 'error', 'access', 'problem', 'issue', 'phone']
 
 COMMON_ALERTS_WORDS = list(set(COMMON_ALERTS_WORDS))
 
