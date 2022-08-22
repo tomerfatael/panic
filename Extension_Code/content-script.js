@@ -73,7 +73,7 @@ function isScam() {                 //calculates page scam score
 
     //chrome.runtime.sendMessage({ content: scamScore, msg: "print" });
 
-    if (scamScore >= 0.4) {                                         //scam score threshold, alerts user with warning popup when passed
+    if (scamScore > 0.4) {                                         //scam score threshold, alerts user with warning popup when passed
         alertUser();
     }
 }
