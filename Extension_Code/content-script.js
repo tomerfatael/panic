@@ -68,11 +68,12 @@ function isScam() {                 //calculates page scam score
     }
 
     //chrome.runtime.sendMessage({ content: usedScore, msg: "print" });
-    scamScore = (scamScore / docText.length);
+    scamScore = 100 * (scamScore / docText.length);                 //normalizes and truncs score to 3 digits from the decimal point
+    scamScore = (Math.trunc(scamScore * 1000) / 1000);
 
     //chrome.runtime.sendMessage({ content: scamScore, msg: "print" });
 
-    if (scamScore * 100 >= 0.4) {                                   //scam score threshold, alerts user with warning popup when passed
+    if (scamScore >= 0.4) {                                         //scam score threshold, alerts user with warning popup when passed
         alertUser();
     }
 }
