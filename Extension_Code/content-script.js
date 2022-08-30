@@ -1,62 +1,31 @@
-/*let scoreDict = {'techsupport': 0.0, 'alert': 0.45454545454545453, 'pc': 0.5454545454545454, 'security': 0.045454545454545456,
-'windows': 0.18181818181818182, 'address': 0.30303030303030304, 'financial': 0.030303030303030304,
-'message': 0.4393939393939394, 'email': 0.2878787878787879, 'using': 0.13636363636363635,
+let scoreDict = {'techsupport': 0.0, 'alert': 0.45454545454545453, 'pc': 0.4454545454545454, 'security': 0.305454545454545456,
+'windows': 0.30181818181818182, 'address': 0.10303030303030304, 'financial': 0.130303030303030304,
+'message': 0.1393939393939394, 'email': 0.0578787878787879, 'using': 0.01636363636363635,
 'virus': 0.015151515151515152, 'breach': 0.0, 'tracking': 0.13636363636363635, 'carry': 0.030303030303030304,
-'communications': 0.0, 'ancient': 0.0, 'result': 0.25757575757575757, 'call': 0.5909090909090909, 'stalkers': 0.0,
-'thefts': 0.0, 'administrator': 0.030303030303030304, 'exe': 0.2878787878787879, 'hacked': 0.0,
-'logs': 0.12121212121212122, 'services': 0.045454545454545456, 'suspended': 0.045454545454545456,
-'restart': 0.18181818181818182, 'situation': 0.030303030303030304, 'attention': 0.19696969696969696, 'duped': 0.0,
-'contacting': 0.0, 'webcam': 0.0, 'oops': 0.0, 'passwords': 0.0, 'registry': 0.045454545454545456,
-'prevent': 0.5303030303030303, 'technicians': 0.015151515151515152, 'connection': 0.015151515151515152, 'adware': 0.0,
-'disabled': 0.48484848484848486, 'block': 0.45454545454545453, 'pop': 0.5909090909090909,
-'access': 0.18181818181818182, 'reserved': 0.06060606060606061, 'run': 0.30303030303030304,
-'worm': 0.015151515151515152, 'program': 0.10606060606060606, 'frame': 0.5909090909090909, 'live': 0.2878787878787879,
-'warning': 0.16666666666666666, 'unknown': 0.15151515151515152, 'wrong': 0.09090909090909091, 'classified': 0.0,
-'info': 0.6212121212121212, 'attack': 0.0, 'actions': 0.3181818181818182, 'desk': 0.30303030303030304,
-'details': 0.3787878787878788, 'computing': 0.0, 'inject': 0.10606060606060606, 'something': 0.09090909090909091,
-'malware': 0.0, 'calling': 0.015151515151515152, 'copyright': 0.015151515151515152, 'especially': 0.0,
-'technical': 0.030303030303030304, 'vpn': 0.0, 'follow': 0.22727272727272727, 'harmful': 0.0,
-'response': 0.3787878787878788, 'engineering': 0.0, 'anonymous': 0.0, 'significant': 0.0, 'shut': 0.0,
-'browsing': 0.07575757575757576, 'location': 0.5454545454545454, 'containing': 0.0, 'dear': 0.21212121212121213,
-'installed': 0.015151515151515152, 'visit': 0.2727272727272727, 'current': 0.42424242424242425,
-'continue': 0.42424242424242425, 'causing': 0.0, 'caused': 0.0, 'exposed': 0.015151515151515152,
-'apply': 0.3484848484848485, 'acts': 0.10606060606060606, 'useful': 0.0, 'warriors': 0.0, 'leaked': 0.0, 'often': 0.0,
-'concealed': 0.0, 'reason': 0.16666666666666666, 'tcp': 0.0, 'theft': 0.0, 'social': 0.22727272727272727,
-'rights': 0.030303030303030304, 'firewall': 0.0, 'major': 0.030303030303030304, 'disk': 0.0, 'logins': 0.0,
-'identity': 0.030303030303030304, 'removed': 0.07575757575757576, 'hard': 0.0, 'locked': 0.16666666666666666,
-'cause': 0.21212121212121213, 'viruses': 0.0, 'password': 0.045454545454545456, 'deleted': 0.030303030303030304,
-'fix': 0.3787878787878788, 'auto': 0.48484848484848486, 'based form': 0.0, 'trick': 0.0, 'software': 0.0, 'crash': 0.0,
-'terms': 0.0, 'tech support': 0.0, 'contact': 0.12121212121212122, 'toll-free': 0.0, 'toll free': 0.015151515151515152,
-'error': 0.5454545454545454, 'problem': 0.045454545454545456, 'issue': 0.24242424242424243, 'support': 0.151515};*/
-
-let scoreDict = {'techsupport': 0.0, 'alert': 0.45454545454545453, 'pc': 0.4454545454545454, 'security': 0.295454545454545456,
-'windows': 0.30181818181818182, 'address': 0.10303030303030304, 'financial': 0.030303030303030304,
-'message': 0.1393939393939394, 'email': 0.0878787878787879, 'using': 0.01636363636363635,
-'virus': 0.015151515151515152, 'breach': 0.0, 'tracking': 0.13636363636363635, 'carry': 0.030303030303030304,
-'communications': 0.0, 'ancient': 0.0, 'result': 0.25757575757575757, 'call': 0.4909090909090909, 'stalkers': 0.0,
-'thefts': 0.0, 'administrator': 0.030303030303030304, 'exe': 0.2878787878787879, 'hacked': 0.0,
+'communications': 0.0, 'ancient': 0.0, 'result': 0.15757575757575757, 'call': 0.4909090909090909, 'stalkers': 0.0,
+'thefts': 0.0, 'administrator': 0.030303030303030304, 'exe': 0.1878787878787879, 'hacked': 0.0,
 'logs': 0.12121212121212122, 'services': 0.045454545454545456, 'suspended': 0.045454545454545456,
 'restart': 0.18181818181818182, 'situation': 0.030303030303030304, 'attention': 0.19696969696969696, 'duped': 0.0,
 'contacting': 0.1, 'webcam': 0.0, 'oops': 0.0, 'passwords': 0.2, 'registry': 0.045454545454545456,
 'prevent': 0.3303030303030303, 'technicians': 0.015151515151515152, 'connection': 0.015151515151515152, 'adware': 0.25,
-'disabled': 0.38484848484848486, 'block': 0.25454545454545453, 'pop': 0.2909090909090909,
-'access': 0.2981818181818182, 'reserved': 0.06060606060606061, 'run': 0.20303030303030304,
-'worm': 0.015151515151515152, 'program': 0.10606060606060606, 'frame': 0.2909090909090909, 'live': 0.2878787878787879,
+'disabled': 0.38484848484848486, 'block': 0.15454545454545453, 'pop': 0.1909090909090909,
+'access': 0.2981818181818182, 'reserved': 0.06060606060606061, 'run': 0.10303030303030304,
+'worm': 0.015151515151515152, 'program': 0.10006060606060606, 'frame': 0.1909090909090909, 'live': 0.0978787878787879,
 'warning': 0.18666666666666666, 'unknown': 0.15151515151515152, 'wrong': 0.09090909090909091, 'classified': 0.0,
 'info': 0.1012121212121212, 'attack': 0.0, 'actions': 0.3181818181818182, 'desk': 0.00303030303030304,
 'details': 0.1787878787878788, 'computing': 0.0, 'inject': 0.10606060606060606, 'something': 0.01090909090909091,
 'malware': 0.0, 'calling': 0.015151515151515152, 'copyright': 0.015151515151515152, 'especially': 0.0,
 'technical': 0.030303030303030304, 'vpn': 0.0, 'follow': 0.22727272727272727, 'harmful': 0.0,
 'response': 0.1787878787878788, 'engineering': 0.0, 'anonymous': 0.0, 'significant': 0.0, 'shut': 0.0,
-'browsing': 0.07575757575757576, 'location': 0.2454545454545454, 'containing': 0.0, 'dear': 0.21212121212121213,
-'installed': 0.015151515151515152, 'visit': 0.2727272727272727, 'current': 0.10424242424242425,
+'browsing': 0.07575757575757576, 'location': 0.1454545454545454, 'containing': 0.0, 'dear': 0.21212121212121213,
+'installed': 0.015151515151515152, 'visit': 0.0927272727272727, 'current': 0.08424242424242425,
 'continue': 0.02424242424242425, 'causing': 0.0, 'caused': 0.0, 'exposed': 0.015151515151515152,
 'apply': 0.2484848484848485, 'acts': 0.10606060606060606, 'useful': 0.0, 'warriors': 0.0, 'leaked': 0.0, 'often': 0.0,
-'concealed': 0.0, 'reason': 0.16666666666666666, 'tcp': 0.0, 'theft': 0.05, 'social': 0.22727272727272727,
+'concealed': 0.0, 'reason': 0.16666666666666666, 'tcp': 0.0, 'theft': 0.05, 'social': 0.02127272727272727,
 'rights': 0.030303030303030304, 'firewall': 0.0, 'major': 0.030303030303030304, 'disk': 0.0, 'logins': 0.0,
 'identity': 0.100303030303030304, 'removed': 0.07575757575757576, 'hard': 0.0, 'locked': 0.16666666666666666,
 'cause': 0.21212121212121213, 'viruses': 0.04, 'password': 0.045454545454545456, 'deleted': 0.030303030303030304,
-'fix': 0.3787878787878788, 'auto': 0.18484848484848486, 'based form': 0.0, 'trick': 0.0, 'software': 0.0, 'crash': 0.0,
+'fix': 0.2787878787878788, 'auto': 0.10484848484848486, 'based form': 0.0, 'trick': 0.0, 'software': 0.0, 'crash': 0.0,
 'terms': 0.0, 'tech support': 0.0, 'contact': 0.38121212121212122, 'toll-free': 0.35, 'toll free': 0.215151515151515152,
 'error': 0.5454545454545454, 'problem': 0.045454545454545456, 'issue': 0.24242424242424243, 'support': 0.351515};
 
@@ -97,10 +66,10 @@ let scamScore = 0.0;
 window.onload = isScam();
 function isScam() {                 //calculates page scam score
     let domain = window.location.hostname;                          //whitelist
-    if ((domain == "twitter.com") || domain == "www.omegle.com"){
+    if (domain == "www.bing.com"){
         return 0;
     }
-    
+
     let docText = allText();
     let max_weight = 0;
     chrome.runtime.sendMessage({ content: "These are the texts:", msg: "print" });
@@ -138,7 +107,7 @@ function isScam() {                 //calculates page scam score
 
     chrome.runtime.sendMessage({ content: "Score - " + scamScore, msg: "print" });
 
-    if (scamScore > 0.4) {                                         //scam score threshold, alerts user with warning popup when passed
+    if (scamScore > 0.6) {                                         //scam score threshold, alerts user with warning popup when passed
         alertUser();
     }
 }
