@@ -5,5 +5,6 @@
 4. Go to "Extensions"
 5. Toggle on "Developer mode" on the top right corner
 6. Choose "Load unpacked" on the top left corner
-7. Choose the "code" folder from the extracted files
-8. Turn on the extension
+7. Open the "code" folder from the extracted files
+8. Choose the "Extension_Code" folder
+9. Turn on the extension
